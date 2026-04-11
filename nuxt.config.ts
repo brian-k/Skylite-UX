@@ -7,6 +7,8 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
+    haUrl: '', // NUXT_HA_URL env var
+    haToken: '', // NUXT_HA_TOKEN env var
     public: {
       skyliteVersion: pkg.version,
       nuxtVersion: pkg.devDependencies.nuxt,
