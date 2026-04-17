@@ -26,14 +26,6 @@ function isActivePath(path: string) {
       aria-label="Todo Lists"
     />
     <UButton
-      :class="isActivePath('/shoppinglists') ? 'text-primary' : 'text-default'"
-      to="/shoppinglists"
-      variant="ghost"
-      icon="i-lucide-shopping-cart"
-      size="xl"
-      aria-label="Shopping Lists"
-    />
-    <UButton
       :class="isActivePath('/mealplanner') ? 'text-primary' : 'text-default'"
       to="/mealplanner"
       variant="ghost"
