@@ -42,6 +42,14 @@ function isActivePath(path: string) {
       aria-label="Alexa Shopping List"
     />
     <UButton
+      :class="isActivePath('/chores') ? 'text-primary' : 'text-default'"
+      to="/chores"
+      variant="ghost"
+      icon="i-lucide-star"
+      size="xl"
+      aria-label="Chores"
+    />
+    <UButton
       :class="isActivePath('/settings') ? 'text-primary' : 'text-default'"
       to="/settings"
       variant="ghost"
